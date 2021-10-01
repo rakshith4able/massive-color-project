@@ -6,11 +6,10 @@ export default class PaletteList extends Component {
     render() {
         return (
             <div className="PaletteList">
-                <MiniPalette />
                 <h1>React Colors</h1>
                 {seedColor.map(
                     (palette) => {
-                        return (<p><Link exact to={`/palette/${palette.id}`}>{palette.paletteName}</Link></p>)
+                        return (<MiniPalette {...palette} />)
                     }
                 )}
             </div>
