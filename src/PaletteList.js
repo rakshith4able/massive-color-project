@@ -10,7 +10,8 @@ const styles = {
         height: "100%",
         display: "flex",
         alignItems: "flex-start",
-        justifyContent: "center"
+        justifyContent: "center",
+        height: "100vh"
     },
     container: {
         width: "50%",
