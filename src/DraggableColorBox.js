@@ -1,5 +1,5 @@
-import React from 'react';
-import { withStyles } from '@mui/styles';
+import React from "react";
+import { withStyles } from "@material-ui/styles";
 
 const styles = {
     root: {
@@ -9,14 +9,18 @@ const styles = {
         display: "inline-block",
         position: "relative",
         cursor: "pointer",
-        marginBottom: "-3.5px",
+        marginBottom: "-3.5px"
     }
 };
 
 function DraggableColorBox(props) {
-    return (<div className={props.classes.root} style={{ backgroundColor: props.color }}>
-        {props.color}
-    </div>)
+    return (
+        <div
+            className={props.classes.root}
+            style={{ backgroundColor: props.color }}
+        >
+            {props.name}
+        </div>
+    );
 }
-
 export default withStyles(styles)(DraggableColorBox);
