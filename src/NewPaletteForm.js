@@ -10,8 +10,10 @@ import Divider from "@material-ui/core/Divider";
 import IconButton from "@material-ui/core/IconButton";
 import MenuIcon from '@mui/icons-material/Menu';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
+import { ChromePicker } from 'react-color'
+import { Button } from "@material-ui/core";
 
-const drawerWidth = 240;
+const drawerWidth = 400;
 
 const styles = theme => ({
     root: {
@@ -125,6 +127,12 @@ class NewPaletteForm extends Component {
                         </IconButton>
                     </div>
                     <Divider />
+                    <div>
+                        <Button variant="contained" color="secondary">Clear Palette</Button>
+                        <Button variant="contained" color="primary">Random Color</Button>
+                    </div>
+                    <ChromePicker color="blue" onChangeComplete={(changedColor) => console.log(changedColor)} />
+                    <Button variant="contained" color="primary">ADD COLOR</Button>
                 </Drawer>
                 <main
                     className={classNames(classes.content, {
