@@ -5,35 +5,32 @@ import styles from './Styles/PaletteListStyles'
 import { Link } from 'react-router-dom'
 
 class PaletteList extends Component {
-    constructor(props) {
-        super(props);
-        this.goToPalette = this.goToPalette.bind(this);
-    }
-
     goToPalette(id) {
         this.props.history.push(`/palette/${id}`);
     }
     render() {
-        const { palettes, classes } = this.props;
+        const { palettes, classes, deletePalette } = this.props;
         return (
             <div className={classes.root}>
                 <div className={classes.container}>
                     <nav className={classes.nav}>
                         <h1>React Colors</h1>
-                        <Link to="/palette/new">New Palette</Link>
+                        <Link to='/palette/new'>Create Palette</Link>
                     </nav>
-
                     <div className={classes.palettes}>
-                        {palettes.map(
-                            (palette) => {
-                                return (<MiniPalette {...palette} handleClick={() => { return this.goToPalette(palette.id) }} />)
-                            }
-                        )}
+                        {palettes.map(palette => (
+                            <MiniPalette
+                                {...palette}
+                                handleClick={() => this.goToPalette(palette.id)}
+                                handleDelete={deletePalette}
+                                key={palette.id}
+                                id={palette.id}
+                            />
+                        ))}
                     </div>
                 </div>
             </div>
-        )
+        );
     }
 }
-
 export default withStyles(styles)(PaletteList);
