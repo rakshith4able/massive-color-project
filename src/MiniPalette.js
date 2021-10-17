@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { withStyles } from '@mui/styles'
 import styles from './Styles/MiniPaletteStyles'
+import DeleteIcon from "@mui/icons-material/Delete";
 
 class MiniPalette extends Component {
     constructor(props) {
