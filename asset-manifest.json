@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/massive-color-project/static/css/main.189130fe.chunk.css",
+    "main.js": "/massive-color-project/static/js/main.dd30f2bd.chunk.js",
+    "main.js.map": "/massive-color-project/static/js/main.dd30f2bd.chunk.js.map",
+    "runtime-main.js": "/massive-color-project/static/js/runtime-main.352bb377.js",
+    "runtime-main.js.map": "/massive-color-project/static/js/runtime-main.352bb377.js.map",
+    "static/css/2.f8e28173.chunk.css": "/massive-color-project/static/css/2.f8e28173.chunk.css",
+    "static/js/2.a9deea4a.chunk.js": "/massive-color-project/static/js/2.a9deea4a.chunk.js",
+    "static/js/2.a9deea4a.chunk.js.map": "/massive-color-project/static/js/2.a9deea4a.chunk.js.map",
+    "static/js/3.26a30742.chunk.js": "/massive-color-project/static/js/3.26a30742.chunk.js",
+    "static/js/3.26a30742.chunk.js.map": "/massive-color-project/static/js/3.26a30742.chunk.js.map",
+    "index.html": "/massive-color-project/index.html",
+    "static/css/2.f8e28173.chunk.css.map": "/massive-color-project/static/css/2.f8e28173.chunk.css.map",
+    "static/css/main.189130fe.chunk.css.map": "/massive-color-project/static/css/main.189130fe.chunk.css.map",
+    "static/js/2.a9deea4a.chunk.js.LICENSE.txt": "/massive-color-project/static/js/2.a9deea4a.chunk.js.LICENSE.txt",
+    "static/media/bg.c99d9e1b.svg": "/massive-color-project/static/media/bg.c99d9e1b.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.352bb377.js",
+    "static/css/2.f8e28173.chunk.css",
+    "static/js/2.a9deea4a.chunk.js",
+    "static/css/main.189130fe.chunk.css",
+    "static/js/main.dd30f2bd.chunk.js"
+  ]
+}
